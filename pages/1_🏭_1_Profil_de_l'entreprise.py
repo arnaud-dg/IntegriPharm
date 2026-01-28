@@ -4,18 +4,19 @@ st.set_page_config(page_title="Description entreprise — IntegriPharm", page_ic
 
 st.title("🏭 Description de l'entreprise **IntegriPharm**")
 
-c1, c2 = st.columns(2)
+c1, c2 = st.columns([2,1])
 with c1:
-    st.subheader("🏢 Description synthétique")
+    st.subheader("Description synthétique de l'entreprise")
     st.markdown(
         """
-    **IntegriPharm**  
-    - Créée en **2015**  
-    - **Biotech** : fermentation (procédé en **1 réacteur**), puis **purification**  
-    - **220 employés** sur site  
-    - Inspection FDA **remote en 2022** : gaps d’intégrité des données  
-    - Prochaine inspection : **mi-2026**  
-    - Engagement actionnaires : améliorer performance & productivité via **data + IA**
+    - Entreprise pharmaceutique créée en 2015
+    - Dirigeant actuel : Jean-Luc Intègre, CEO d'Integripharm
+    - L'entreprise compte actuelle 220 employés  
+    - Le produit phare est un produit biotechnologique produit par fermentation / purification 
+    - La dernière inspection FDA s'est déroulée en remote en 2022. Cette dernière a mis en évidence des écarts significatifs en matière d'intégrité des données  
+    - La prochaine inspection FDA est prévue en septembre 2026
+    - Des engagements ont été pris auprès des actionnaires pour 2026 en ce qui concerne la performance industrielle. Le site souhaite lancer des projets
+     d'amélioration de la Productivité à l'aide d'outils "data" et "IA".
     """
 )
 with c2:
@@ -23,54 +24,43 @@ with c2:
 
 st.divider()
 
-st.subheader("🎯 Objectifs 2026")
+st.subheader("Les objectifs 2026")
 c1, c2 = st.columns(2)
 with c1:
     st.markdown(
         """
-**1) Préparer et assurer l’inspection FDA**  
-- Reprendre la main sur l’intégrité des données  
-- Sécuriser l’usage des systèmes (droits, audit trails, traçabilité)  
-- Standardiser les pratiques (naming, calculs, sources de vérité)
+**1) Améliorer le système qualité afin que l'inspection FDA soit un succès**  
+- Reprendre la main sur l'intégrité des données
+- Sécuriser l'usage des systèmes
+- Standardiser les pratiques
 """
     )
 with c2:
     st.markdown(
         """
-**2) Poser les fondations pour les projets IA**  
-- Données fiables, gouvernées, accessibles  
-- Interopérabilité des systèmes (LIMS / MES / logbooks / QMS / etc.)  
-- Capacités de monitoring (CPV, tendances, signaux faibles)
+**2) Lancer les premières initiatives IA**  
+- Identifier les sujets d'intérêts
+- Evaluer si les données sont suffisantes et adaptées pour déployer les initiatives IA
 """
     )
 
 st.divider()
 
-st.subheader("⚠️ Risques clés (lecture ‘inspection-ready’)")
-st.markdown(
-    """
-- **Shadow IT / Excels locaux** : divergence des chiffres et perte de traçabilité  
-- **Accès & licences** : partage de comptes = gros drapeau rouge DI  
-- **Hétérogénéité des calculs** : pas de “single source of truth”  
-- **Retranscriptions lourdes** : perte de temps + erreurs + versioning  
-- **Silos applicatifs** : systèmes achetés non connectés → data patchwork
+st.subheader("Votre rôle")
+c1, c2 = st.columns([3,1])
+with c1:
+    st.markdown(
+        """
+**Vous êtes une équipe de consultants en charge d'aider IntegriPharm a atteindre ses objectifs 2026 !**
+
+**Sur la partie Qualité**
+- Vous devrez à travers les informations qui vous ont été transmises réaliser un diagnostic mettant en lumière les points faibles de l'organisaton.
+- Vous devrez aider l'entreprise à mettre en place les actions de remédiation qui s'imposent dans une perspectif court-terme et long-terme.
+
+**Sur la partie Performance**
+- Vous devrez aider les équipes à identifier les bons sujets et les bons axes d'amélioration.
+- Vous devrez garantir que les données sont adaptées à ces projets, et dans le cas contraire proposer des actions de remédiation.
 """
-)
-
-st.warning(
-    "Point critique : si le site a déjà été ‘cartouché’ sur la data integrity en 2022, "
-    "une inspection sur site en 2026 cherchera des preuves de remédiation systémique (pas juste des rustines)."
-)
-
-st.divider()
-
-st.subheader("🧩 Deliverables typiques d’un programme 2026 (exemples)")
-st.markdown(
-    """
-- Cartographie des systèmes & flux (as-is / to-be)
-- Politique d’accès + gestion des identités (comptes nominaux, revues périodiques)
-- Standard de calcul KPIs (TRS/OEE, rendement, déviations, etc.) + data dictionary
-- Pipeline CPV minimal viable + tableaux de bord
-- Playbook inspection (evidence pack, data requests, drill, Q&A)
-"""
-)
+    )
+with c2:
+    st.image("assets/We want you.jpg")
