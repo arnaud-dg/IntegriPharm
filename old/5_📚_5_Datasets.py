@@ -11,7 +11,7 @@ st.set_page_config(
     layout="wide",
 )
 
-sidebar_logo("assets/logo_ebi_a3p.png", logo_height=250, reserve_space=0, margin_top=10)
+sidebar_logo("assets/logo_ebi_a3p.png", logo_height=200, reserve_space=0, margin_top=10)
 
 st.title("📚 Bases de données de l'entreprise IntegriPharm")
 
