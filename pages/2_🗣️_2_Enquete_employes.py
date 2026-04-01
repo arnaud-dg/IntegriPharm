@@ -22,18 +22,18 @@ verbatims_struct = [
     {
         "Prenom": "Camille",
         "NomInitiale": "D.",
-        "Service": "Assurance Qualité",
+        "Service": "",
         "Intitule": "Directrice Qualité",
-        "Verbatim": "La situation est sensible car nous avons encore énormément de travail avant l'inspection. L'inspection readiness est définitvement un enjeu qu'il faudra que je travaille. "
+        "Verbatim": "La situation est sensible car nous avons encore énormément de travail avant l'inspection. L'inspection readiness est définitivement un enjeu qu'il faudra que je travaille. "
         "... Le management tolère certains écarts au nom des contraintes opérationnelles, ce qui fragilise notre culture qualité. Il faut que le Top management se mouille davantage et m'aide sur ces sujets"
     },
     {
         "Prenom": "Eric",
         "NomInitiale": "Z.",
-        "Service": "Assurance Qualité",
+        "Service": "",
         "Intitule": "Responsable Qualité Opérationnelle",
-        "Verbatim": "Je ne suis pas sûr ici que les gens comprennent bien que la qualité et la Data Integrity c'est l'affaire de tous. Très souvent, les gens se reposent sur nous et imaginent que dès qu'il y a un sujet déviation ou Data Integrity c'est forcément l'affaire de la qualité."
-        "Il y a un autre problème ; quand je compare avec mon ancienne entreprise, je trouve que, ici, la Data Integrity n'est pas assez représentée dans les analyses de risques, la démarche de Change Control et les dashboards de reporting"
+        "Verbatim": "Je ne suis pas sûr ici que les gens comprennent bien que la qualité et la Data Integrity c'est l'affaire de tous. Très souvent, les gens se reposent sur nous et imaginent que dès qu'il y a un sujet déviation ou Data Integrity c'est forcément l'affaire de la Qualité."
+        " Il y a un autre problème : lorsque je compare avec mon ancienne entreprise, je trouve que, ici, la Data Integrity n'est pas assez représentée dans les analyses de risques, la démarche de Change Control et les dashboards de reporting"
     },
     {
         "Prenom": "Nina",
@@ -41,17 +41,17 @@ verbatims_struct = [
         "Service": "Assurance Qualité",
         "Intitule": "Qualification/Validation Expert",
         "Verbatim": "J'ai un vrai problème de bande passante ! Tous les projets sont urgents et on doit tout gérer de front. … Le choix des fournisseurs se fait à la va-vite et on en paye parfois les pots cassés. "
-        "Après, quand il y a un écart, tout le monde se renvoie la balle et on avance pas. ... Je constate qu'on a aussi beaucoup mal à passer du mode projet au mode routine. Dans le cadre des systèmes de supervision condi, "
-        "j'ai fait un certain nombre de recommandations par rapport à la gestions des accès, à la revue des *audits trails* et aux sauvegardes, mais les services concernés ne les ont pas prises en compte et ne s'en sont pas saisis. On se dit, on verra plus tard."
-        "Mais bon, on a un audit trail sur la ligne de condi, c'est déjà ça !"
+        "Après, quand il y a un écart, tout le monde se renvoie la balle et on n'avance pas. ... Je constate qu'on a aussi beaucoup mal à passer du mode projet au mode routine. Dans le cadre des systèmes de supervision du Conditionnement, "
+        "j'ai fait un certain nombre de recommandations par rapport à la gestion des accès, à la revue des *audits trails* et aux sauvegardes, mais les services concernés ne les ont pas prises en compte et ne s'en sont pas saisis. On se dit, on verra plus tard."
+        " Mais bon, on a un audit trail sur la ligne de condi, c'est déjà ça !"
     },
     {
         "Prenom": "Julien",
         "NomInitiale": "B.",
         "Service": "DSI",
         "Intitule": "Directeur",
-        "Verbatim": "Moi et mon équipe nous travaillons avec un parc d'équipements très hétérogène. Je suis frappé par la faible culture numérique."
-        "Je n'arrête pas de dire aux gens qui font les appels d'offre qu'il ne faut pas voir leur projet de façon isolée, il faut que les équipements "
+        "Verbatim": "Moi et mon équipe, nous travaillons avec un parc d'équipements très hétérogène. Je suis frappé par la faible culture numérique."
+        " Je n'arrête pas de dire aux gens qui font les appels d'offre qu'il ne faut pas voir leur projet de façon isolée, il faut que les équipements "
         "puissent bien communiquer ensemble pour atteindre une vraie digitalisation."
     },
     {
@@ -60,7 +60,7 @@ verbatims_struct = [
         "Service": "Finance",
         "Intitule": "Directrice",
         "Verbatim": "En qualité de directrice du controlling, je suis prête à valider toute forme d'investissement, mais je tiens à ce que l'on me prouve le retour sur investissement."
-        "Ce qui apporte de la valeur à l'entreprise sur le compte de résultat, c'est bien le produit et non la donnée. Cela fait cher de dépenser 100k€ pour des activités bureaucratiques."
+        " Ce qui apporte de la valeur à l'entreprise sur le compte de résultat, c'est bien le produit et non la donnée. Cela fait cher de dépenser 100k€ pour des activités bureaucratiques."
     },
     {
         "Prenom": "Medhi",
@@ -68,15 +68,15 @@ verbatims_struct = [
         "Service": "Production",
         "Intitule": "Directeur de production",
         "Verbatim": "Mes équipes doivent produire des grosses quantités et avec un turn-over important, cela implique que tout le monde doit être super polyvalent."
-        "Je sais que ce n'est pas toujours facile pour les gens de switcher d'une ligne à l'autre en si peu de temps."
+        " Je sais que ce n'est pas toujours facile pour les gens de switcher d'une ligne à l'autre en si peu de temps."
     },
     {
         "Prenom": "Sophie",
         "NomInitiale": "R.",
         "Service": "Production",
         "Intitule": "Responsable Conditionnement",
-        "Verbatim": "Je recontre régulièrement des opérateurs dans mon bureau pour les resensibiliser suite à des écarts en provenance des équipes de relecture dossier. "
-        "Hier, j'ai recadré un opérateur qui n'avait pas compris qu'il ne faut pas écraser de données de proeduction en pharma."
+        "Verbatim": "Je rencontre régulièrement des opérateurs dans mon bureau pour les resensibiliser suite à des écarts en provenance des équipes de relecture dossier. "
+        "Hier, j'ai recadré un opérateur qui n'avait pas compris qu'il ne faut pas écraser de données de production en environnement pharmaceutique."
         "... Après, ce n'est pas pour défendre les équipes, mais je ne suis pas sûr que les gens se rendent compte du nombre d'informations que les opérateurs saisissent ou retranscrivent à longueur de journée."
     },
     {
@@ -93,7 +93,7 @@ verbatims_struct = [
         "Service": "Production",
         "Intitule": "Opérateur",
         "Verbatim": "C'est beaucoup plus pratique d'avoir un compte partagé, cela évite d'oublier son mot de passe, ce qui m'est déjà arrivé souvent de nuit. "
-        "Sur les caméras vision par exemple, les comptes sont nominatifs et cela fait une foule de comptes différents dans le système."
+        " Sur les caméras vision par exemple, les comptes sont nominatifs et cela fait une foule de comptes différents dans le système."
         "... Roger est parti en retraite il y 5 ans et son compte est toujours là ! Tout le monde connaît son mot de passe *'Juventus95'*"
     },
     {
@@ -120,4 +120,4 @@ full_text = SEPARATOR.join(
         for _, row in df.iterrows()
     ]
 )
-st.text_area("", full_text, height=1200)
+st.text_area("", full_text, height=2000)

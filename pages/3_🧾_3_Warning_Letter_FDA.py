@@ -15,7 +15,7 @@ st.markdown(
 warning_letter = """
 Dear **Mr. Jean-Luc Intègre**,
 
-The U.S. Food and Drug Administration (FDA) inspected your drug manufacturing facility, Integripharm, and identified significant violations of Current Good Manufacturing Practice (CGMP) regulations (21 CFR parts 210 and 211).
+The U.S. Food and Drug Administration (FDA) inspected your drug manufacturing facility, Integripharm, and identified significant violations of Current Good Manufacturing Practice (CGMP) regulations (21 CFR parts 11, 210 and 211).
 
 Because your methods and controls do not conform to CGMP, your drug products are adulterated within the meaning of section 501(a)(2)(B) of the FD&C Act.
 ### Observed Deficiencies

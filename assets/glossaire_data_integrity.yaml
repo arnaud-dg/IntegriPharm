@@ -1,0 +1,150 @@
+glossaire:
+  - terme: "ALCOA+"
+    definition: >
+      Acronyme étendu définissant les 9 caractéristiques requises d'une donnée fiable :
+      Attributable (attribuable), Legible (lisible), Contemporaneous (contemporaine),
+      Original (originale), Accurate (exacte), Complete (complète), Consistent (cohérente),
+      Enduring (durable), Available (disponible).
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §3.10"
+
+  - terme: "Archivage"
+    definition: >
+      Conservation sécurisée et durable des données et enregistrements pendant toute
+      leur période de rétention réglementaire, garantissant leur accessibilité et leur intégrité.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.17.1"
+      - "EMA GMP Annex 11 (2011), §17"
+
+  - terme: "Audit Trail"
+    definition: >
+      Journal électronique qui enregistre automatiquement toute création, modification
+      ou suppression de données, avec horodatage et identification de l'auteur.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.13"
+      - "EMA GMP Annex 11 (2011), §9"
+
+  - terme: "Backup (Sauvegarde)"
+    definition: >
+      Copie de sécurité des données réalisée régulièrement pour prévenir toute perte
+      en cas d'incident technique.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.17.2"
+      - "EMA GMP Annex 11 (2011), §7.2"
+
+  - terme: "Contrôle d'accès (Access Control)"
+    definition: >
+      Mécanisme technique limitant l'accès aux systèmes et aux données aux seules
+      personnes autorisées, avec des droits individuels définis.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.16"
+      - "EMA GMP Annex 11 (2011), §12"
+
+  - terme: "Data Governance"
+    definition: >
+      Cadre global regroupant culture, organisation et moyens techniques pour assurer
+      que les données sont enregistrées, traitées et conservées de façon complète,
+      cohérente et exacte tout au long de leur cycle de vie.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.5"
+
+  - terme: "Data Integrity"
+    definition: >
+      Ensemble des principes garantissant que les données sont complètes, exactes
+      et fiables tout au long de leur cycle de vie, afin d'assurer la sécurité du patient
+      et la qualité du produit.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.4"
+
+  - terme: "Data Lifecycle"
+    definition: >
+      Cycle de vie complet des données couvrant toutes les phases : génération,
+      enregistrement, traitement (analyse, transformation, migration), utilisation,
+      conservation, archivage et destruction.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.6"
+
+  - terme: "Data Management"
+    definition: >
+      Ensemble des dispositions organisationnelles et techniques mises en place
+      pour gérer les données de manière fiable et conforme aux exigences réglementaires.
+
+  - terme: "Données brutes (Raw Data)"
+    definition: >
+      Enregistrements originaux, non modifiés, générés lors de la première observation
+      ou mesure d'une activité.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.2"
+
+  - terme: "eBR (Electronic Batch Record)"
+    definition: >
+      Version électronique du dossier de lot, permettant l'enregistrement numérique
+      en temps réel des étapes de fabrication avec traçabilité intégrée.
+    references:
+      - "EMA GMP Annex 11 (2011), §15"
+
+  - terme: "GMP (Good Manufacturing Practice)"
+    definition: >
+      Bonnes Pratiques de Fabrication : ensemble de règles garantissant que les
+      médicaments sont fabriqués et contrôlés selon des normes de qualité reconnues
+      internationalement.
+
+  - terme: "Métadonnées (Metadata)"
+    definition: >
+      Données contextuelles associées à une donnée principale (date, auteur, système
+      source, etc.) indispensables à son interprétation complète.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.3"
+
+  - terme: "PIC/S"
+    definition: >
+      Pharmaceutical Inspection Co-operation Scheme : organisation internationale
+      harmonisant les pratiques d'inspection GMP entre autorités réglementaires,
+      auteur d'une guidance majeure sur la Data Integrity (PI 041-1).
+
+  - terme: "QRM (Quality Risk Management)"
+    definition: >
+      Gestion du risque qualité : processus systématique d'identification, d'évaluation
+      et de maîtrise des risques affectant la qualité du produit et la sécurité du patient.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §3.4–3.6"
+      - "EMA GMP Annex 11 (2011), §1"
+
+  - terme: "Quality Culture"
+    definition: >
+      Ensemble des valeurs, comportements et attitudes partagés au sein d'une
+      organisation qui favorisent naturellement le respect des bonnes pratiques
+      et l'intégrité des données.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §3.3"
+
+  - terme: "Revue périodique (Periodic Review)"
+    definition: >
+      Examen régulier et planifié des systèmes et des données pour vérifier que
+      les mesures de contrôle restent efficaces et adaptées.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.15"
+      - "EMA GMP Annex 11 (2011), §11"
+
+  - terme: "Risk Based Approach"
+    definition: >
+      Approche fondée sur l'analyse des risques pour prioriser les efforts de contrôle
+      là où l'impact sur la qualité et la sécurité patient est le plus élevé.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §2.6, §4"
+      - "EMA GMP Annex 11 (2011), §1"
+
+  - terme: "Système informatisé (Computerized System)"
+    definition: >
+      Ensemble composé de matériel, logiciel et procédures opérationnelles utilisé
+      pour réaliser ou contrôler un processus réglementé dans l'industrie pharmaceutique.
+    references:
+      - "EMA GMP Annex 11 (2011), Principe & Glossaire"
+
+  - terme: "Traçabilité"
+    definition: >
+      Capacité à retracer l'historique complet d'une donnée ou d'une activité,
+      de sa création à son état actuel, en identifiant chaque étape et chaque intervenant.
+    references:
+      - "MHRA GxP Data Integrity Guide (2018), §6.13"
+      - "EMA GMP Annex 11 (2011), §9"

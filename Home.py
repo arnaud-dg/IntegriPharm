@@ -1,5 +1,5 @@
 import streamlit as st
-from utils import sidebar_logo
+from utils import sidebar_logo, pdf_download_button
 
 st.set_page_config(
     page_title="IntegriPharm — Data & IA (fictif)",
@@ -30,7 +30,7 @@ Si l'inspection échoue, les conséquences seront dramatiques:
 - Impact financier majeur
 - Perte de crédibilité du site
 
-Vous êtes mandatés par la Direction pour éviter ce scénario catastrophe !
+**Vous êtes mandatés par la Direction pour éviter ce scénario catastrophe !**
 """
 )
 
@@ -43,6 +43,7 @@ with c1:
 with c2:
     st.markdown("""
     Vous êtes un groupe de nouveaux responsables Production et Assurance Qualité.
+    
     Votre mission :
     - **Identifier les dérives possibles et réelles en matière de Data Integrity**
     - Évaluer le niveau de **risque**
@@ -55,39 +56,55 @@ st.divider()
 
 st.subheader("🧭 Déroulé du *serious game*")
 st.markdown("""
-**🕵️ Phase 1 – Diagnostic (1 heure)**
+**🕵️ Phase 1 – Diagnostic (1h15 environ)**
             
-- Lister les écarts constatés liés aux principes ALCOA+
-- Détecter les risques critiques sur le procédés de conditionnement
-- Classer ces écarts par niveau de criticité
-- Identifier les causes racines (organisationnelles, techniques, culturelles)
+- Lister les écarts liés aux principes ALCOA+
+- Détecter les risques sur l'intégrité des données relative au procédé de conditionnement
+- Classer ces écarts par niveau de risque
+- Identifier et hiérarchiser les causes racines communes aux différents écarts (à la manière d'un "5 Pourquois")
+
+**Livrable de cette étape** : Un diagnostic structuré avec cartographie des risques.         
 """)
 
+st.divider()
+
 st.markdown("""
-**🛠 Phase 2 – Plan d'action (1 heure)**
-            
+**🛠 Phase 2 – Plan d'action (1 heure environ)**
+
+Maintenant que le diagnostic est posé, vous devez bâtir un plan d'action de remédiation.
+                     
 Vous disposez :
 - D'un budget limité
 - D'un nombre limité de ressources internes
 - D'un délai de 90 jours
             
-Vous devez prioriser et arbitrer entre les différentes actions possibles. Vous devez construire un plan cohérent, réaliste et défendable.
+A vous de prioriser et d'arbitrer entre les différentes actions possibles afin de construire un plan cohérent, réaliste et défendable.
+
+**Livrable de cette étape** : Un plan d'action arbitré.            
 """)
 
-st.markdown("""Les livrables seront doubles :
-- un diagnostic structuré avec cartographie des risques. 
-- un plan d'action arbitré.
+st.divider()
 
+st.markdown("""
+**🎤 Restitution collective**
+
+Afin de confronter les points de vue, chaque équipe disposera de 8 minutes pour livrer les grandes lignes de son diagnostic et justifier son plan d'action.      
+""")
+
+st.divider()
+
+st.info("""
 ⚠️ Merci de bien respecter et de ne pas modifier la structure des templates excel qui vont seront fournis pour effectuer cette analyse.""")
 
 st.info("""
 Certaines informations seront peut-être partielles, d'autres ambiguës, à vous de décider si il s'agit d'un risque réel ou d'un faux signal.
 Vu la quantité d'information à parcourir, vous êtes invités à vous répartir les tâches, puis à consolider vos remarques. Il y a 3 sources de données différentes : 
-- l'analyse de l'enquête employés
-- L'analyse de la *warning letter* et des documents (SOP, DDL)
-- L'analyse de risque des workflows de données du conditionnement
+- Les résultats de l'enquête menée auprès des employés
+- La *warning letter* FDA
+- Les documents à disposition (Dossier de Lot, SOP) en provenance du conditionnement
 
 En cas de question, n'hésitez pas à vous manifester auprès des animateurs et à avancer de votre côté en attendant.
 """)
 
-
+st.divider()
+pdf_download_button()

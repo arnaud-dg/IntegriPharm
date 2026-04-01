@@ -25,8 +25,8 @@ with tab1:
     - Entreprise pharmaceutique créée en 2015.
     - Dirigeant actuel : Jean-Luc Intègre.
     - L'entreprise assure la production de son produit phare l'**Integrivex**, depuis la fabrication jusqu'au packaging.
-    - Le site de production unique de l'entreprise compte actuellement 250 employés. Pour anticiper les prévisiosn fortes de croissance, l'entreprise envisage d'embaucher une cinquantaine d'opérateurs et techniciens de fabrication sur l'année 2026.
-    - La dernière inspection FDA (Pre-Approval Inspection) s'est déroulée en 2022. Cette dernière a mis en évidence des écarts significatifs en matière d'intégrité des données.  
+    - Le site de production unique de l'entreprise compte actuellement 250 employés. Pour anticiper les prévisions de croissance, l'entreprise envisage d'embaucher une cinquantaine d'opérateurs et techniciens de fabrication sur l'année 2026.
+    - La dernière inspection FDA (Pre-Approval Inspection) s'est déroulée en 2025. Cette dernière a mis en évidence des écarts significatifs en matière d'intégrité des données.  
     - La prochaine inspection FDA est prévue en septembre 2026 et un des objectifs structurants du site est de réussir cette inspection retour. 
     """)
 
@@ -34,12 +34,9 @@ with tab2:
     st.subheader("🎯 Les objectifs 2026")
     st.markdown(
             """
-    **🚧 Work in Progress**
-
-    **Améliorer le système qualité afin que l'inspection FDA soit un succès**  
-    - Reprendre la main sur l'intégrité des données
-    - Sécuriser l'usage des systèmes
-    - Standardiser les pratiques
+    - **Renforcer le système qualité afin que l'inspection FDA à venir soit un succès**  
+    - **Reprendre la main sur l'intégrité des données**
+    - **Intégrer 50 nouveaux opérateurs dans les équipes de production**
     """
         )
 
