@@ -1,5 +1,19 @@
+from pathlib import Path
+
 import streamlit as st
+from streamlit_pdf_viewer import pdf_viewer
 from utils import sidebar_logo
+
+
+def embed_pdf(pdf_path: str, height: int = 800) -> None:
+    path = Path(pdf_path)
+    if not path.exists():
+        st.error(f"Fichier introuvable : {pdf_path}")
+        return
+    _, col, _ = st.columns([0.05, 0.9, 0.05])
+    with col:
+        with st.container(border=True):
+            pdf_viewer(str(path), height=height, width="100%")
 
 st.set_page_config(page_title="Démarche CPV — IntegriPharm", page_icon="📈", layout="wide")
 
@@ -46,8 +60,8 @@ with tab2:
 
 with tab3:
     st.subheader("📋 SOP de conditionnement")
-    st.markdown("""**🚧 Work in Progress**""")
+    embed_pdf("data/SOP.pdf")
 
 with tab4:
     st.subheader("🧾 Dossier de lot")
-    st.markdown("""**🚧 Work in Progress**""")
+    embed_pdf("data/DDL.pdf")
