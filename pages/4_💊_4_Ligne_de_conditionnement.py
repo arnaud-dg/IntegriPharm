@@ -5,15 +5,15 @@ from streamlit_pdf_viewer import pdf_viewer
 from utils import sidebar_logo
 
 
-def embed_pdf(pdf_path: str, height: int = 800) -> None:
+def embed_pdf(pdf_path: str, height: int = 1200) -> None:
     path = Path(pdf_path)
     if not path.exists():
         st.error(f"Fichier introuvable : {pdf_path}")
         return
-    _, col, _ = st.columns([0.05, 0.9, 0.05])
+    _, col, _ = st.columns([0.14, 0.72, 0.14])
     with col:
         with st.container(border=True):
-            pdf_viewer(str(path), height=height, width="100%")
+            pdf_viewer(str(path), height=height, width="100%", zoom_level=1.5)
 
 st.set_page_config(page_title="Démarche CPV — IntegriPharm", page_icon="📈", layout="wide")
 
@@ -65,3 +65,37 @@ with tab3:
 with tab4:
     st.subheader("🧾 Dossier de lot")
     embed_pdf("data/DDL.pdf")
+
+    st.divider()
+
+    st.markdown("#### Glossaire des acronymes")
+    acronymes = {
+        "Acronyme": ["BLPR", "C / NC", "CIP", "DOD", "GTIN", "GS1", "MO", "NA", "OCV", "OF"],
+        "Signification": [
+            "Blister Primaire",
+            "Conforme / Non-Conforme",
+            "Code Identifiant de Présentation",
+            "Drop On Demand",
+            "Global Trade Item Number",
+            "Global Standards One",
+            "Mode Opératoire",
+            "Non Applicable",
+            "Optical Character Verification",
+            "Ordre de fabrication",
+        ],
+        "Contexte": [
+            "Code article du composant prévu dans l'OF.",
+            "Terme utilisé pour valider / invalider un contrôle.",
+            "Code français, utilisé pour identifier de manière unique une présentation précise d'un médicament (dosage, forme, conditionnement, etc.).",
+            "Technologie d'impression jet d'encre où l'imprimante éjecte une goutte d'encre uniquement lorsqu'elle doit imprimer, à l'inverse du jet d'encre continu.",
+            "Identifiant international, normalisé par GS1, utilisé pour identifier de manière unique tout produit commercialisé dans le monde.",
+            "Organisation internationale qui développe et maintient les normes mondiales d'identification, dont le GTIN, le GLN, le SSCC, les codes-barres EAN/UPC, et les GS1 DataMatrix utilisés en santé, logistique, distribution et industrie.",
+            "Séquençage des tâches à réaliser, défini dans le mode opératoire du système MES.",
+            "Terme utilisé pour acter la non applicabilité de la tâche.",
+            "Vérification visuelle humaine des caractères imprimés sur un emballage.",
+            "Référence unique d'une fabrication contenant la liste des composants, les quantités et la liste des opérations.",
+        ],
+    }
+    import pandas as pd
+    df_acronymes = pd.DataFrame(acronymes)
+    st.dataframe(df_acronymes, use_container_width=True, hide_index=True)
